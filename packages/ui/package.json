@@ -1,0 +1,26 @@
+{
+  "name": "@zts-ui/ui",
+  "type": "module",
+  "main": "./dist/zts-ui.js",
+  "module": "./dist/zts-ui.js",
+  "exports": {
+    ".": {
+      "import": "./dist/zts-ui.js",
+      "require": "./dist/zts-ui.umd.js"
+    }
+  },
+  "scripts": {
+    "build": "vite build"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "peerDependencies": {
+    "vue": "^3.3.11"
+  },
+  "dependencies": {
+    "@zts-ui/button": "workspace:^",
+    "@zts-ui/shared": "workspace:^"
+  }
+}

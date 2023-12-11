@@ -1,0 +1,25 @@
+{
+  "name": "@zts-ui/shared",
+  "type": "module",
+  "main": "./dist/zts-shared.js",
+  "module": "./dist/zts-shared.js",
+  "exports": {
+    ".": {
+      "require": "./dist/zts-shared.umd.js",
+      "import": "./dist/zts-shared.js"
+    }
+  },
+  "scripts": {
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "@types/lodash-es": "^4.17.12"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "dependencies": {
+    "lodash-es": "^4.17.21"
+  }
+}

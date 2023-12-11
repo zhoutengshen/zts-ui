@@ -1,0 +1,18 @@
+{
+  "name": "zts-ui",
+  "private": true,
+  "scripts": {
+    "build:all": "pnpm --filter @zts-ui/* run build",
+    "dev:demo": "pnpm --filter @zts-ui/demo run dev"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.4",
+    "@vitejs/plugin-vue": "^4.5.2",
+    "sass": "^1.69.5",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.6"
+  },
+  "dependencies": {
+    "vue": "^3.3.11"
+  }
+}

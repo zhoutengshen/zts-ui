@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "module": "ESNext",
+    "moduleResolution": "NodeNext",
+    // 启用组合编译，作用：优化编译速度，
+    // 启用条件：
+    // 1. composite: true 2. references: [] 3. tsconfig.json 中的 extends: [] 不能有循环引用
+    "composite": true,
+    "lib": [
+      "ESNext"
+    ],
+    "types": [
+      "node"
+    ],
+    "allowJs": true,
+  },
+  // node下的ts文件
+  "include": [
+    "**/vite.config.*",
+  ],
+  "exclude": [
+    "**/dist",
+    "**/node_modules",
+  ]
+}

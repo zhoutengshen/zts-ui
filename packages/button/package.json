@@ -1,0 +1,29 @@
+{
+  "name": "@zts-ui/button",
+  "main": "./dist/zts-button.js",
+  "module": "./dist/zts-button.js",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/zts-button.js",
+      "require": "./dist//zts-button.umd.cjs"
+    }
+  },
+  "scripts": {
+    "build": "vite build",
+    "build:watch": "vite build --watch"
+  },
+  "devDependencies": {
+    "vue": "^3.3.11"
+  },
+  "peerDependencies": {
+    "vue": "^3.3.11"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "dependencies": {
+    "@zts-ui/shared": "workspace:^"
+  }
+}

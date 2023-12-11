@@ -1,0 +1,7 @@
+{
+  "name": "@zts-ui/docs",
+  "private": true,
+  "dependencies": {
+    "@zts-ui/shared": "workspace:^"
+  }
+}

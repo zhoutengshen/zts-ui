@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json.schemastore.org/tsconfig",
+  "extends": [
+    "./tsconfig.base.json"
+  ],
+  "compilerOptions": {
+    // 是否生成 sourceMap
+    "sourceMap": true,
+    "composite": true,
+    "lib": [
+      "ESNext",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "types": [
+      // q: 为什么编译的产物是浏览器环境，也需要 node 的类型声明？
+      // a: 因为 node 的类型声明中包含了一些浏览器环境中没有的类型声明，比如：Buffer
+      // "node"
+    ],
+    "paths": {
+      "@zts-ui/*": [
+        "packages/*/src"
+      ]
+    }
+  },
+  "include": [
+    "packages/*/src",
+    "demo/src",
+    "docs/src",
+    "typings"
+  ]
+}
