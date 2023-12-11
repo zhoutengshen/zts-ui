@@ -3,7 +3,12 @@
   "private": true,
   "scripts": {
     "build:all": "pnpm --filter @zts-ui/* run build",
-    "dev:demo": "pnpm --filter @zts-ui/demo run dev"
+    "build:lib": "pnpm --filter ./packages/** run build && pnpm run move:dts && pnpm run resolve:pkg",
+    "dev:demo": "pnpm --filter @zts-ui/demo run dev",
+    "type:check": "npx vue-tsc -p tsconfig.app.json --noEmit --composite false",
+    "gen:dts": "npx vue-tsc -p tsconfig.app.json --composite false --declaration --emitDeclarationOnly",
+    "move:dts": "npx ts-node ./scripts/moveDts.ts",
+    "resolve:pkg": "npx ts-node ./scripts/resolvePkg.ts"
   },
   "devDependencies": {
     "@types/node": "^20.10.4",

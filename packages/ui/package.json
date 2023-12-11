@@ -6,7 +6,8 @@
   "exports": {
     ".": {
       "import": "./dist/zts-ui.js",
-      "require": "./dist/zts-ui.umd.js"
+      "require": "./dist/zts-ui.umd.js",
+      "types": "./dist/@types/index.d.ts"
     }
   },
   "scripts": {

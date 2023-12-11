@@ -6,7 +6,8 @@
   "exports": {
     ".": {
       "require": "./dist/zts-shared.umd.js",
-      "import": "./dist/zts-shared.js"
+      "import": "./dist/zts-shared.js",
+      "types": "./dist/@types/index.d.ts"
     }
   },
   "scripts": {

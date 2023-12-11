@@ -6,7 +6,8 @@
   "exports": {
     ".": {
       "import": "./dist/zts-button.js",
-      "require": "./dist//zts-button.umd.cjs"
+      "require": "./dist//zts-button.umd.cjs",
+      "types": "./dist/@types/index.d.ts"
     }
   },
   "scripts": {
