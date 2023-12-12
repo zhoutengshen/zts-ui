@@ -1,4 +1,5 @@
 import { defineConfig } from 'vite';
+
 export default defineConfig({
   build: {
     lib: {
@@ -10,8 +11,8 @@ export default defineConfig({
     rollupOptions: {
       external: [
         /@zts-ui.*/,
-        'vue'
-      ]
-    }
-  }
-})
+        'vue',
+      ],
+    },
+  },
+});

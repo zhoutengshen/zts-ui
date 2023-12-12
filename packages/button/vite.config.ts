@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
+
 export default defineConfig({
   build: {
     lib: {
@@ -8,7 +9,7 @@ export default defineConfig({
       },
       formats: ['umd', 'es', 'cjs'],
       name: 'ZtsButton',
-      fileName: 'zts-button'
+      fileName: 'zts-button',
     },
     rollupOptions: {
       external: [
@@ -17,12 +18,12 @@ export default defineConfig({
       ],
       output: {
         globals: {
-          vue: 'Vue'
-        }
-      }
-    }
+          vue: 'Vue',
+        },
+      },
+    },
   },
   plugins: [
     vue(),
-  ]
-})
+  ],
+});

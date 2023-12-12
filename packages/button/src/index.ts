@@ -1,5 +1,6 @@
-import ZtsButton from './index.vue';
-export * from './interface';
+import ZtsButton from './index.vue'
+
+export * from './interface'
 export {
-  ZtsButton
+  ZtsButton,
 }

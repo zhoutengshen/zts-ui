@@ -1,2 +1,2 @@
-export * from './is';
-export * from './useLodash';
+export * from './is'
+export * from './useLodash'

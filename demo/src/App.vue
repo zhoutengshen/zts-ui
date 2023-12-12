@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import { ZtsButton } from '@zts-ui/ui';
+import { ZtsButton } from '@zts-ui/ui'
 </script>
 
 <template>
   <div>
-    <ZtsButton />
+    <ZtsButton>okk</ZtsButton>
   </div>
 </template>
 

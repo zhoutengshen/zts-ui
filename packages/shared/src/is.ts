@@ -1,3 +1,3 @@
-export function isString(target: any): target is string {
-    return typeof target === 'string';
+export function isString(target: unknown): target is string {
+  return typeof target === 'string'
 }
