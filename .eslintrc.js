@@ -29,8 +29,6 @@ const { defineConfig } = require('eslint-define-config');
 //   },
 // });
 
-// require('@rushstack/eslint-patch/modern-module-resolution');
-
 module.exports = defineConfig({
   root: true,
   extends: [
@@ -47,8 +45,18 @@ module.exports = defineConfig({
     'import/prefer-default-export': 'off',
     "no-console": process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    // 禁止魔法数字
-    // 'no-magic-numbers': 'error',
-    "vue/component-name-in-template-casing": ["PascalCase"]
-  }
+    "vue/component-name-in-template-casing": ['error', 'PascalCase', { registeredComponentsOnly: true }],
+    "vue/component-options-name-casing": ['error', 'PascalCase'],
+    'linebreak-style': ['error', 'unix'],
+    // 末尾空行
+    'eol-last': ['error', 'always'],
+    // 函数之间空行
+    'lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: true }],
+    "padding-line-between-statements": [
+      "error",
+      { blankLine: "always", prev: "*", next: "function" },
+      { blankLine: "always", prev: "function", next: "*" },
+      { blankLine: "always", prev: "function", next: "function" }
+    ]
+  },
 });

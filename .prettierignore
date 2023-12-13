@@ -1,0 +1,9 @@
+# .prettierignore
+node_modules
+dist
+# 忽略掉这些逻辑性文件，prettier 设置为默认格式化工具，但是只处理html，json 等eslint 无法处理的文件
+**/*.ts
+**/*.js
+**/*.jsx
+**/*.tsx
+**/*.vue

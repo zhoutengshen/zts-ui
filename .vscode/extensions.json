@@ -2,5 +2,7 @@
   "recommendations": [
     "vue.volar",
     "vue.vscode-typescript-vue-plugin",
+    "esbenp.prettier-vscode",
+    "EditorConfig.EditorConfig"
   ]
 }

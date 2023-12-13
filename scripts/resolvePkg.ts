@@ -32,4 +32,5 @@ const setPackagesExportsTypes = async () => {
 function main() {
   setPackagesExportsTypes()
 }
+
 main()

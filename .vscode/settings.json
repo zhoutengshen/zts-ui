@@ -1,4 +1,31 @@
 {
   "editor.inlineSuggest.showToolbar": "onHover",
-  "typescript.tsdk": "node_modules/typescript/lib"
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "eslint.enable": true,
+  // eslint 会在检查出错误时，给出对应的文档链接地址
+  "eslint.codeAction.showDocumentation": {
+    "enable": true
+  },
+  // 指定 eslint 生效的文件类型(尤其是 vue 文件)。
+  "eslint.probe": [
+    "javascript",
+    "typescript",
+    "vue"
+  ],
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    // "source.fixAll.stylelint": true
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "Vue.volar"
+  },
+  "prettier.enable": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // // 指定 eslint 的工作区，使每个子模块下的 .eslintignore 文件都能对当前目录生效。
+  // "eslint.workingDirectories": [
+  //   {
+  //     "mode": "auto"
+  //   }
+  // ],
 }

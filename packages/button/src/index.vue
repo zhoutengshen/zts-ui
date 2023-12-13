@@ -8,13 +8,13 @@ defineOptions({
   name: 'ZtsButton',
 })
 defineSlots<{
-  default: () => void
+  default:() => void
 }>()
 </script>
 
 <template>
   <button class="zts-button" type="button">
-    <slot></slot>
+    <slot />
   </button>
 </template>
 
